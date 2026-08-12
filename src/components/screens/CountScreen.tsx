@@ -13,13 +13,6 @@ interface CountScreenProps {
   onBackClick?: () => void;
 }
 
-const GROUP_COLORS: Record<string, string> = {
-  main: '#E8A93C',
-  safety: '#4FA98A',
-  aux: '#B7B199',
-  mixed: 'var(--primary)'
-};
-
 const CountScreen: React.FC<CountScreenProps> = ({
   groupId,
   poolLabel,
