@@ -69,7 +69,6 @@ const QuizScreen: React.FC<QuizScreenProps> = ({
 
   const total = quizQuestions.length;
   const isLast = currentIndex === total - 1;
-  const isCorrectAnswer = isAnswered && selectedOption === currentQuestion.answer;
 
   return (
     <div className="screen">
