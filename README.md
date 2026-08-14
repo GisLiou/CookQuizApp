@@ -1,77 +1,41 @@
-# React + TypeScript + Vite
+# 🍳 中餐烹飪題庫 App (CookQuizApp)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+這是一個專為中餐烹飪丙級學科考試設計的響應式網頁測驗 App，採用現代化的前端技術打造，提供流暢的手機版視覺體驗與多樣化的練習模式。
 
-Currently, two official plugins are available:
+🔗 **線上即時預覽：** [https://GisLiou.github.io/CookQuizApp/](https://GisLiou.github.io/CookQuizApp/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## ✨ 主要功能特色
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+* **🎯 多元練習模式**：支援全科練習、依難易度/主題分類練習、錯題複習。
+* **📱 手機版最佳化設計**：介面精緻，支援流暢的上下滾動與頂部導覽列左右滑動，完美適配各種行動裝置。
+* **♿ 靈活字體與排版**：支援系統字體放大與自動換行，確保長題目與選項不被擠壓裁切。
+* **🔊 互動音效與即時回饋**：提供作答即時對錯提示與音效，提升學習效率與趣味性。
 
-Note: This will impact Vite dev & build performances.
+---
 
-## Expanding the ESLint configuration
+## 🛠️ 技術架構
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+* **前端框架**：Vue / Vite (現代化單頁式應用)
+* **樣式設計**：模組化 CSS (`variables`, `layout`, `components`, `themes`)
+* **部署平台**：GitHub Pages 自動化部署
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🚀 本地開發與執行
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+如果您想在本地端執行或修改此專案，請依照以下步驟操作：
 
-```
+```bash
+# 1. 複製專案到本地
+git clone [https://github.com/GisLiou/CookQuizApp.git](https://github.com/GisLiou/CookQuizApp.git)
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+# 2. 進入專案資料夾
+cd CookQuizApp
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+# 3. 安裝相依套件
+npm install
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
+# 4. 啟動本地開發伺服器
+npm run dev
