@@ -1,7 +1,9 @@
 // 定義單一題目的資料結構
 export interface Question {
   q: string;
+  image_url?: string; // 題目圖片的相對路徑 (可選)
   options: string[];
+  option_images?: string[]; // 選項圖片的相對路徑 (可選)
   answer: number;
   _qid: string; // 用於追蹤作答紀錄的唯一識別碼 (格式：分類名稱#題目索引)
 }

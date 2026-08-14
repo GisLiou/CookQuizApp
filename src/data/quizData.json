@@ -1802,7 +1802,7 @@
         "options": ["道路交通安全講習", "環境講習", "衛生講習", "消防講習"],
         "answer": 1
       },
-      { "q": "下列何者為環保標章？", "options": ["", "", "", ""], "answer": 0 },
+      { "q": "下列何者為環保標章？", "options": ["", "", "", ""], "option_images": ["../images/badge-env.png", "../images/badge-energy.png", "../images/badge-water.png", "../images/badge-carbon.png"], "answer": 0 },
       {
         "q": "「聖嬰現象」是指哪一區域的溫度異常升高？",
         "options": [
@@ -2398,7 +2398,7 @@
         "options": ["26", "25", "24", "22"],
         "answer": 0
       },
-      { "q": "下列何者為節能標章？", "options": ["", "", "", ""], "answer": 1 },
+      { "q": "下列何者為節能標章？", "options": ["", "", "", ""], "option_images": ["../images/badge-mit.png", "../images/badge-energy.png", "../images/badge-carbon.png", "../images/badge-env.png"], "answer": 1 },
       {
         "q": "下列何者為國內能源消費最大部門？",
         "options": ["服務業", "住宅", "運輸", "工業"],
@@ -2941,6 +2941,7 @@
       },
       {
         "q": "如下圖示為",
+        "image_url": "../images/energy-efficiency-label.png",
         "options": ["省水標章", "環保標章", "奈米標章", "能源效率標示"],
         "answer": 3
       },
@@ -3096,6 +3097,7 @@
       },
       {
         "q": "如下圖，這是什麼標章？",
+        "image_url": "../images/badge-water.png",
         "options": ["奈米標章", "環保標章", "省水標章", "節能標章"],
         "answer": 2
       },

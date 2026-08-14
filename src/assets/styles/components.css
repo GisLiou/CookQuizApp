@@ -208,17 +208,6 @@
   height: auto;
 }
 
-.cat-tag {
-  align-self: flex-start;
-  background: #efe6cf;
-  color: var(--primary-dark);
-  font-weight: 800;
-  font-size: clamp(12px, 1.9vh, 15px);
-  padding: 3px 10px;
-  border-radius: 999px;
-  flex-shrink: 0;
-}
-
 .question-text {
   font-size: var(--font-question);
   font-weight: 700;
@@ -379,8 +368,8 @@
 .big-action {
   width: 100%;
   border: 2px solid var(--line); /* 加上外框讓按鈕更立體 */
-  background: var(--panel);       /* 預設使用面板底色 */
-  color: var(--ink);              /* 預設文字顏色 */
+  background: var(--panel); /* 預設使用面板底色 */
+  color: var(--ink); /* 預設文字顏色 */
   font-size: var(--font-choice);
   font-weight: 900;
   padding: 12px;
@@ -534,4 +523,37 @@ footer.note {
   background: var(--panel);
   border-radius: 14px;
   padding: 10px 18px;
+}
+.question-image-wrap {
+  margin-top: 12px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.quiz-img {
+  max-width: 100%;
+  max-height: 180px;
+  object-fit: contain;
+  border-radius: 10px;
+  border: 1.5px solid var(--line);
+  background: var(--panel);
+  padding: 4px;
+}
+
+/* 選項為圖片（標章辨識題）時，改為 2x2 排版 */
+.options.options-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.opt-btn.opt-btn-img {
+  flex-direction: column;
+  min-height: 130px;
+}
+
+.opt-img {
+  max-width: 100%;
+  max-height: 80px;
+  object-fit: contain;
 }
