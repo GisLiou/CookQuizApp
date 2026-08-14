@@ -53,7 +53,7 @@ const MenuScreen: React.FC<MenuScreenProps> = ({ quizData, stats, onSelectCatego
     <div className="screen">
       <TopBar showHome={false} />
       
-      <div className="fill-col">
+      <div className="panel fill-col">
         <div className="section-label">請選擇科目</div>
         
         <div className="choice-grid">

@@ -1,23 +1,29 @@
 .choice-btn.group-main,
 .intro-panel.group-main {
-  background: #FCEAD1;
-  border-color: #F0C888;
+  background: #fcead1;
+  border-color: #f0c888;
 }
-.choice-btn.group-main:active { background: #F8DCB3; }
+.choice-btn.group-main:active {
+  background: #f8dcb3;
+}
 
 .choice-btn.group-safety,
 .intro-panel.group-safety {
-  background: #DFF0EA;
-  border-color: #A9D6C7;
+  background: #dff0ea;
+  border-color: #a9d6c7;
 }
-.choice-btn.group-safety:active { background: #CBE8DD; }
+.choice-btn.group-safety:active {
+  background: #cbe8dd;
+}
 
 .choice-btn.group-aux,
 .intro-panel.group-aux {
-  background: #EFEEE4;
-  border-color: #D8D5C2;
+  background: #efeee4;
+  border-color: #d8d5c2;
 }
-.choice-btn.group-aux:active { background: #E4E1D0; }
+.choice-btn.group-aux:active {
+  background: #e4e1d0;
+}
 
 .choice-btn.group-mixed,
 .intro-panel.group-mixed {
@@ -26,7 +32,9 @@
 }
 
 .choice-btn.group-stats {
-  background: #E9E6F6;
-  border-color: #C7C1E6;
+  background: #e9e6f6;
+  border-color: #c7c1e6;
 }
-.choice-btn.group-stats:active { background: #DAD4EE; }
+.choice-btn.group-stats:active {
+  background: #dad4ee;
+}

@@ -1,7 +1,6 @@
 import React, { useRef, useLayoutEffect } from 'react';
 import TopBar from '../common/TopBar';
 import ProgressBar from '../common/ProgressBar';
-import FeedbackBox from '../common/FeedbackBox';
 import { useAudio } from '../../hooks/useAudio';
 import type { Question } from '../../types';
 
@@ -84,7 +83,7 @@ const QuizScreen: React.FC<QuizScreenProps> = ({
         onHomeClick={onHomeClick} 
       />
       
-      <div className="quiz-grid">
+      <div className="panel quiz-grid">
         <ProgressBar current={currentIndex} total={total} score={score} />
 
         <div className="qhead">
@@ -119,13 +118,6 @@ const QuizScreen: React.FC<QuizScreenProps> = ({
         </div>
 
         <div className="bottom-zone">
-          <FeedbackBox 
-            isAnswered={isAnswered}
-            isCorrect={isCorrectAnswer}
-            correctIndex={currentQuestion.answer}
-            correctText={currentQuestion.options[currentQuestion.answer]}
-          />
-          
           {isAnswered && (
             <button className="next-btn show" onClick={handleNextClick}>
               {isLast ? '查看結果 →' : '下一題 →'}

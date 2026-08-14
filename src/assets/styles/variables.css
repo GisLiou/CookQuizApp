@@ -1,19 +1,25 @@
 :root {
-  --bg: #FBF7EE;
-  --panel: #FFFFFF;
-  --ink: #1F2A24;
-  --ink-soft: #4B5A50;
-  --primary: #1B6B5C;
-  --primary-dark: #12463C;
-  --accent: #D98A3D;
-  --good: #1E8A4C;
-  --good-bg: #E7F6EC;
-  --danger: #C23B3B;
-  --danger-bg: #FBEAEA;
-  --line: #E4DCC8;
+  --bg: #fbf7ee;
+  --panel: #ffffff;
+  --ink: #1f2a24;
+  --ink-soft: #4b5a50;
+  --primary: #1b6b5c;
+  --primary-dark: #12463c;
+  --accent: #d98a3d;
+  --good: #1e8a4c;
+  --good-bg: #e7f6ec;
+  --danger: #c23b3b;
+  --danger-bg: #fbeaea;
+  --line: #e4dcc8;
   --radius: 18px;
-  --shadow: 0 8px 22px rgba(31, 42, 36, 0.10), 0 2px 6px rgba(31, 42, 36, 0.06);
+  --shadow: 0 8px 22px rgba(31, 42, 36, 0.1), 0 2px 6px rgba(31, 42, 36, 0.06);
   --app-h: 100vh;
+  --font-base: clamp(17px, 2.4vh, 21px);
+  --font-lg: clamp(19px, 2.8vh, 24px);
+  --font-hero: clamp(23px, 3.6vh, 32px);
+  --font-choice: clamp(18px, 3.2vh, 26px);
+  --font-question: clamp(20px, 3vh, 25px);
+  --font-opt: clamp(17px, 2.4vh, 20px);
 }
 
 * {
@@ -27,6 +33,7 @@ body {
   background: var(--bg);
   color: var(--ink);
   font-family: "PingFang TC", "Microsoft JhengHei", "Heiti TC", "Noto Sans TC", system-ui, -apple-system, sans-serif;
+  font-size: var(--font-base); /* 套用全域基礎字體 */
   height: 100%;
   overflow: hidden;
   overscroll-behavior: none;

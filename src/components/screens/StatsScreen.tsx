@@ -45,7 +45,7 @@ const StatsScreen: React.FC<StatsScreenProps> = ({
     <div className="screen">
       <TopBar showHome={true} title="練習紀錄" onHomeClick={onHomeClick} />
 
-      <div className="fill-col">
+      <div className="panel fill-col">
         {/* 各科目練習情形 (上方) */}
         <div className="choice-grid">
           {groupStatsData.map((item) => {

@@ -43,7 +43,7 @@ const CountScreen: React.FC<CountScreenProps> = ({
         onHomeClick={onHomeClick} 
       />
       
-      <div className="fill-col">
+      <div className="panel fill-col">
         {/* 帶有各科目配色的提示面板 */}
         <div className={panelClass}>
           <h1 className="hero">
