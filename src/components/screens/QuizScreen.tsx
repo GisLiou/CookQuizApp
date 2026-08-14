@@ -22,7 +22,7 @@ interface QuizScreenProps {
   onBackClick?: () => void;
 }
 
-const LETTERS = ['①', '②', '③', '④'];
+const LETTERS = ['1', '2', '3', '4'];
 
 const QuizScreen: React.FC<QuizScreenProps> = ({
   poolLabel,

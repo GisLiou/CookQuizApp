@@ -8,7 +8,7 @@ interface FeedbackBoxProps {
 }
 
 // 將原本選項前方的數字圖示定義為常數
-const LETTERS = ['①', '②', '③', '④'];
+const LETTERS = ['1', '2', '3', '4'];
 
 const FeedbackBox: React.FC<FeedbackBoxProps> = ({ 
   isAnswered, 
